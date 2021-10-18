@@ -3,6 +3,8 @@ import {
   Switch,
   Route,
   NavLink } from 'react-router-dom'
+import Home from './components/home'
+import About from './components/About'
 import './App.css'
 
 function App() {
@@ -24,11 +26,9 @@ function App() {
           <h1>Contact Us</h1>
         </Route>
         <Route path='/about'>
-          <h1>About Us</h1>
+          <About />
         </Route>
-        <Route path='/'>
-          <h1>Home</h1>
-        </Route>
+        <Route path='/' component={Home} />
       </Switch>
     </Router>
   )
